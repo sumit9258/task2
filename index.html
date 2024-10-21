@@ -3,51 +3,854 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x icon"   href="pngtree-cartoon-red-black-alarm-clock-siren-clipart-png-image_2741423-removebg-preview.png" >
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
 
-    <title>Simple Alarm</title>
+
+
 </head>
 <body>
-    <h1>Set an Alarm</h1>
-    <input type="number" id="hour" placeholder="Hour (0-23)" min="0" max="23">
-    <input type="number" id="min" placeholder="Minute (0-59)" min="0" max="59">
-    <button id="setAlarm">Set Alarm</button>
+    <header class="header ">
+        <div class="logo"><h2> <span class="cater">Cater </span>Serv</h2></div>
+        <nav class="nav-list">
+            <ul>
+            <li><a href="#" style="color: #D4A762;">Home</a></li>
+  <li><a href="#">About</a></li>
+ <li><a href="#">Services</a></li>
+ <li><a href="#">Events</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#" id="js">Pages </a></li>
+      <li><a href="#">Contact</a></li>
 
-    <audio id="alarmSound" src="hen-sound-effect-no-copyright.mp3" preload="auto"></audio>
+        </ul>
+        </nav>
 
-    <script>
-        function play() {
-            document.getElementById('alarmSound').play();
-        }
+        
+            <ul id="nav-page">
+            <!-- <li><a href="#" style="color: #D4A762;">Home</a></li> -->
+  <li><a href="#" class="background-page">Booking</a></li>
+ <li><a href="#" class="background-page">Our Blog</a></li>
+ <li><a href="#" class="background-page">Our Team</a></li>
+      <li><a href="#" class="background-page">Testimonial</a></li>
 
-        function alarm(hour, min) {
-            const datec = setInterval(() => {
-                const date = new Date();
-                console.log("Checking time:", date.getHours(), date.getMinutes());
+        </ul>
+        <script src="page.js"></script>
 
-                if (date.getHours() == hour && date.getMinutes() == min && date.getSeconds() == 0) {
-                    console.log("Alarm ringing");
-                    play();
-                }
+        <div class="search">
+        <i id="icons" class="fa fa-search"></i>
+        <button type="submit" class="btn">Book Now</button>
+    </div>
+   
+    </header>
+<main class="first">
+    <div class="center">
+    <button class="welcome">Welcome to CaterServ</button> 
+<h1 class="big-text">Book <span class="cater">Cater</span> Serv For <br/> Your Dream Event</h1>
+</div>
+<div class="bookbtn">
+<button type="submit" class="book">Book Now</button>
+
+<button type="submit" class="know">Know More</button>
+</div>
+<div class="big-image">
+<img width="450px" src="assets/hero.png" />
+</div>
+</main>
+
+<section class="second">
+    
+    <div>
+<img class="back" width="400px" src="assets/about.jpg" /> </div>
+<main class="po">
+<div>
+    <button type="submit" class="aboutbtn">About US</button>
+</div>
+
+<div class="clients">
+<h1>Trusted By 200 + satisfied clients</h1>
+</div>
+<div class="phara">
+    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eit <br/>
+         esdioilore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br/> 
+         ullaemco laboeeiris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <br/>
+          iesdein reprehendeerit in voluptate velit esse cillum dolore.</p>
+    </div>
+    <div class="share2">
+      <p><i id="share" class="fa fa-share"></i>Fresh and Fast food Delivery  </p>
+
+
+      <p><i id="share" class="fa fa-share"></i>24/7 Customer Support  </p>
+
+    </div>
+
+    <div class="share2">
+        <p><i id="share" class="fa fa-share"></i>Easy Customization Options</p>
+  
+  
+        <p><i id="share" class="fa fa-share"></i>Delicious Deals for Delicious Meals
+        </p>
+  
+      </div>
+      <div>
+        <button class="sharebtn">About Us</button>
+      </div>
+</main>
+</section>
+
+<main class="count">
+
+<div class="card1">
+    
+    <i class="fa fa-users white" id="user"></i>
+    <h2 class="math">689</h2>
+<p class="customers">Happy <br/> Customers</p>
+</div>
+
+<div class="card">
+    <i class="fa-solid fa-users-gear white"></i>
+    <h2 class="math" >107</h2>
+<p class="customers">Expert Chefs</p>
+</div>
+
+<div class="card">
+    <i class="fa fa-check white" id="user"></i>
+    <h2 class="math">253</h2>
+<p class="customers">Events Complete
+
+</p>
+</div>
+
+<video controls>
+<source src="assets/A Cinematic Restaurant Commercial - Panasonic Lumix GH5s footage __ Salute Cafe & Bar - SJA (1080p, h264, youtube).mp4">
+
+</video>
+</main>
+
+<div class="service">
+    <button type="submit" class="servicebtn">Our Services</button>
+    <h1 class="offer">What We Offer</h1>
+</div>
+
+<section class="third">
+<div class="products">
+    <i class="fa fa-cheese pizza"></i>
+    <h2 class="overview">Wedding Services</h2>
+    <p class="productcard">Contrary to popular belief, ipsum is not simply random.
+    </p>
+    <button class="readbtn" type="submit" >Read More</button>
+
+</div>
+
+<div class="products">
+    <i class="fa fa-pizza-slice pizza"></i>
+    <h2 class="overview">Corporate Catering</h2>
+    <p class="productcard">Contrary to popular belief, ipsum is not simply random.
+    </p>
+    <button class="readbtn" type="submit" >Read More</button>
+
+</div>
+<div class="products">
+    <i class="fa fa-hotdog pizza"></i>
+    <h2 class="overview">Cocktail Reception</h2>
+    <p class="productcard">Contrary to popular belief, ipsum is not simply random.
+    </p>
+    <button class="readbtn" type="submit" >Read More</button>
+
+</div>
+
+<div class="products">
+    <i class="fa fa-hamburger pizza"></i>
+    <h2 class="overview">Bento Catering</h2>
+    <p class="productcard">Contrary to popular belief, ipsum is not simply random.
+    </p>
+    <button class="readbtn" type="submit"> Read More</button>
+
+</div>
+
+
+</section>
+
+<section class="third">
+    <div class="products">
+        <i class="fa fa-wine-glass-alt pizza"></i>
+        <h2 class="overview">Pub Party</h2>
+        <p class="productcard">Contrary to popular belief, ipsum is not simply random.
+        <button class="readbtn" type="submit" >Read More</button>
+    
+    </div>
+    
+    <div class="products">
+        <i class="fa fa-walking pizza"></i>
+        <h2 class="overview">Home Delivery
+        </h2>
+        <p class="productcard">Contrary to popular belief, ipsum is not simply random.
+        </p>
+        <button class="readbtn" type="submit" >Read More</button>
+    
+    </div>
+    <div class="products">
+        <i class="fa fa-wheelchair pizza"></i>
+        <h2 class="overview">Sit-down Catering
+        </h2>
+        <p class="productcard">Contrary to popular belief, ipsum is not simply random.
+        </p>
+        <button class="readbtn" type="submit" >Read More</button>
+    
+    </div>
+    
+    <div class="products">
+        <i class="fa fa-utensils pizza"></i>
+        <h2 class="overview">Buffet Catering</h2>
+        <p class="productcard">Contrary to popular belief, ipsum is not simply random.
+        </p>
+        <button class="readbtn" type="submit"> Read More</button>
+    
+    </div>
+    
+    </section>
+    <div class="latest">
+<button class="latestbtn" type="submit">LATEST EVENTS</button>
+<h1 class="event">Our Social & Professional Events Gallery
+</h1>
+</div>
+<main class="flexbtn">
+<div>
+    <button class="firstbtn" type="submit">ALL Events</button>
+</div>
+<div>
+    <button class="allbtn" type="submit">Wedding</button>
+</div>
+<div >
+    <button class="allbtn" type="submit">Corporate</button>
+</div>
+<div >
+    <button class="allbtn" type="submit">Cocktail</button>
+</div>
+<div>
+    <button class="allbtn" type="submit">Buffet</button>
+</div>
+
+</main>
+
+<main class="images">
+<div>
+    <img class="b" src="assets/event-1.jpg"/>
+
+</div>
+<div>
+    <img class="bb" src="assets/event-2.jpg"/>
+
+</div>
+<div>
+    <img class="bbb" src="assets/event-3.jpg"/>
+
+</div>
+<div>
+    <img class="bbbb" src="assets/event-4.jpg"/>
+
+</div>
+</main>
+
+<main class="images">
+    <div>
+        <img src="assets/event-5.jpg"/>
+    
+    </div>
+    <div>
+        <img src="assets/event-6.jpg"/>
+    
+    </div>
+    <div>
+        <img src="assets/event-7.jpg"/>
+    
+    </div>
+    <div>
+        <img src="assets/event-8.jpg"/>
+    
+    </div>
+    </main>
+
+<div class="ourmenu">
+<button class="ourmenubtn" type="submit">OUR MENU</button>
+<h1 class="popularfood">Most Popular Food in the World</h1>
+</div>
+
+<main class="ffood">
+<div>
+    <button class="starter" type="submit">Starter</button>
+</div>
+<div>
+    <button class="food" type="submit">Main Course</button>
+</div>
+<div>
+    <button class="food" type="submit">Drinks</button>
+</div>
+<div>
+    <button class="food" type="submit">Offers</button>
+</div>
+<div>
+    <button class="food" type="submit">Our Special</button>
+</div>
+</main>
+
+<section class="menulist">
+<div class="aa">
+    <img src="assets/menu-01.jpg" />
+    <div class="paneer" >
+      <h2 class="ss">  Paneer
+    <span class="money">$90</span> </h2>
+    <p class="pp">Consectetur adipiscing elit sed dwso eiusmod tempor<br/> incididunt ut labore.</p>
+</div>
+</div>
+
+<div class="aa">
+    <img src="assets/menu-02.jpg" />
+    <div class="paneer" >
+      <h2 class="ss">Pizza
+    <span class="money">$90</span> </h2>
+    <p class="pp">Consectetur adipiscing elit sed dwso eiusmod tempor<br/> incididunt ut labore.</p>
+</div>
+</div>
+
+
+</section>
+
+
+
+<section class="menulist">
+    <div class="aa">
+        <img src="assets/menu-03.jpg" />
+        <div class="paneer" >
+          <h2 class="ss">  Sabudana Tikki
+        <span class="tikkimoney">$90</span> </h2>
+        <p class="pp">Consectetur adipiscing elit sed dwso eiusmod tempor<br/> incididunt ut labore.</p>
+    </div>
+    </div>
+    
+    <div class="aa">
+        <img src="assets/menu-04.jpg" />
+        <div class="paneer" >
+          <h2 class="ss">  Sweet Potato
+        <span class="potatomoney">$90</span> </h2>
+        <p class="pp">Consectetur adipiscing elit sed dwso eiusmod tempor<br/> incididunt ut labore.</p>
+    </div>
+    </div>
+    
+    </section>
+    
+<section class="menulist">
+    <div class="aa">
+        <img src="assets/menu-05.jpg" />
+        <div class="paneer" >
+          <h2 class="ss">  Bacon
+        <span class="money">$90</span> </h2>
+        <p class="pp">Consectetur adipiscing elit sed dwso eiusmod tempor<br/> incididunt ut labore.</p>
+    </div>
+    </div>
+    
+    <div class="aa">
+        <img src="assets/menu-06.jpg" />
+        <div class="paneer" >
+          <h2 class="ss">  Chicken
+        <span class="chikenmoney">$90</span> </h2>
+        <p class="pp">Consectetur adipiscing elit sed dwso eiusmod tempor<br/> incididunt ut labore.</p>
+    </div>
+    </div>
+    </section>
+
+        
+<section class="menulist">
+    <div class="aa">
+        <img src="assets/menu-07.jpg" />
+        <div class="paneer" >
+          <h2 class="ss">  Blooming
+        <span class="Bloomingmoney">$90</span> </h2>
+        <p class="pp">Consectetur adipiscing elit sed dwso eiusmod tempor<br/> incididunt ut labore.</p>
+    </div>
+    </div>
+    
+    <div class="aa">
+        <img src="assets/menu-08.jpg" />
+        <div class="paneer" >
+          <h2 class="ss">  Sweet
+        <span class="money">$90</span> </h2>
+        <p class="pp">Consectetur adipiscing elit sed dwso eiusmod tempor<br/> incididunt ut labore.</p>
+    </div>
+    </div>
+    </section>
+
+<main class="bookcontainer">
+<img src="assets/background-site.jpg" />
+
+<form>
+    <div class="formbtn">
+        <button class="btnn" type="submit">Book US</button>
+        <h1 class="font">Where you want Our Services</h1>
+    </div>
+<select>
+    <option >Slect Country</option>
+    <option>India</option>
+    <option>USA</option>
+    <option>UK</option>
+
+</select>
+
+<select>
+    <option >Slect City</option>
+    <option>Agra</option>
+    <option>Shamshabad</option>
+    <option>Noida</option>
+
+</select>
+
+<select>
+    <option >Slect Place</option>
+    <option>Agra</option>
+    <option>Shamshabad</option>
+    <option>Noida</option>
+
+</select> <br/>
+
+<select>
+    <option >Small Event</option>
+    <option>Agra</option>
+    <option>Shamshabad</option>
+    <option>Noida</option>
+
+</select>
+
+<select>
+    <option >No, Of Place</option>
+    <option>Agra</option>
+    <option>Shamshabad</option>
+    <option>Noida</option>
+
+</select>
+
+<select>
+    <option >Vegetarian Place</option>
+    <option>Agra</option>
+    <option>Shamshabad</option>
+    <option>Noida</option>
+
+</select> <br/>
+
+<select>
+    <option >Slect Place</option>
+    <option>Agra</option>
+    <option>Shamshabad</option>
+    <option>Noida</option>
+
+</select>
+<select>
+    <option >Slect Place</option>
+    <option>Agra</option>
+    <option>Shamshabad</option>
+    <option>Noida</option>
+
+</select>
+<select>
+    <option >Slect Place</option>
+    <option>Agra</option>
+    <option>Shamshabad</option>
+    <option>Noida</option>
+
+</select>
+
+<div class="order">
+    <button class="orderbtn" type="submit">Sumbit Now</button>    
+    </div>
+</form>
+<img class="right" src="assets/background-site.jpg" />
+</main>
+
+<div class="ourteam">
+<button class="team" type="submit">OUR TEAM</button>
+<h1 class="cookteam">We have experienced chef Team</h1>
+</div>
+
+<section class="teamimage">
+<div class="teams">
+
+    <img src="assets/team-1 (1).jpg">
+    
+    <i class="fa fa-share-alt shareicon"></i>
+    <i class='fab fa-facebook-f hoverfacebook'></i>
+<i class='fab fa-twitter hovertwitter'></i>
+<i class='fab fa-instagram hoverinstagram'></i>
+
+    <div class="aaaaaa">
+        <h1 class="colorname">Herry</h1>
+<p class="work">Decoration Chef</p>
+    </div>
+
+</div>
+
+<div class="teams">
+    <img src="assets/team-2 (1).jpg">
+    <i class="fa fa-share-alt shareicon"></i>
+    <i class='fab fa-facebook-f hoverfacebook'></i>
+    <i class='fab fa-twitter hovertwitter'></i>
+    <i class='fab fa-instagram hoverinstagram'></i>
+    <div class="aaaaaa">
+        <h1 class="colorname">Jemes Born</h1>
+<p class="work">Executive Chef</p>
+    </div>
+</div>
+<div class="teams">
+    <img src="assets/team-3 (1).jpg">
+    <i class="fa fa-share-alt shareicon"></i>
+    <i class='fab fa-facebook-f hoverfacebook'></i>
+    <i class='fab fa-twitter hovertwitter'></i>
+    <i class='fab fa-instagram hoverinstagram'></i>
+    <div class="aaaaaa">
+        <h1 class="colorname">Martin Hill</h1>
+<p class="work">Kitchen Porter</p>
+    </div>
+
+</div>
+<div class="teams">
+    <img src="assets/team-4 (1).jpg">
+    <i class="fa fa-share-alt shareicon"></i>
+    <i class='fab fa-facebook-f hoverfacebook'></i>
+    <i class='fab fa-twitter hovertwitter'></i>
+    <i class='fab fa-instagram hoverinstagram'></i>
+    <div class="aaaaaa">
+        <h1 class="colorname">Adam Smith</h1>
+<p class="work">Head Chef</p>
+    </div>
+</div>
+</section>
+
+<div class="customer">
+    <button class="testimonial">Testimonial</button>
+    <h1 class="say">What Our Customers says!</h1>
+</div>
+
+
+
+
+<section class="person-page">
+    <div class="full-page">
+    <div class="page-head">
+        
+<div class="testimonial01">
+        <div class="testimonial-1">
+            <img src="assets/testimonial-1.jpg">
+        </div>
+        <div>
+        <h1 class="user-name">Preson Name</h1>
+            <p class="palace">profession</p>
+        </div>
+    </div>
+    
+    <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+
+    </div>
+    <p class="pragrap1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde<br> rerum
+        molestias nostrum voluptatibus vitae,<br> vero alias dolore atque.</p>
+
+    </div>
+
+
+
+    <div class="page-head">
+        <div class="testimonial01">
+                <div class="testimonial-1">
+                    <img src="assets/testimonial-2.jpg">
+                </div>
+                <div>
+                <h1 class="user-name">Preson Name</h1>
+                    <p class="palace">profession</p>
+                </div>
+            </div>
+            
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+        
+            </div>
+            <p class="pragrap1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde<br> rerum
+                molestias nostrum voluptatibus vitae,<br> vero alias dolore atque.</p>
+        
+            </div>
+
+
+
+            <div class="page-head">
+                <div class="testimonial01">
+                        <div class="testimonial-1">
+                            <img src="assets/testimonial-3.jpg">
+                        </div>
+                        <div>
+                        <h1 class="user-name">Preson Name</h1>
+                            <p class="palace">profession</p>
+                        </div>
+                    </div>
+                    
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                 
-                if (date.getHours() == hour && date.getMinutes() > min) {
-                    clearInterval(datec);
-                    console.log("Stop alarm");
-                }
-            }, 1000);
-        }
+                    </div>
+                    <p class="pragrap1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde<br> rerum
+                        molestias nostrum voluptatibus vitae,<br> vero alias dolore atque.</p>
+                
+                    </div>
 
-        document.getElementById('setAlarm').onclick = function() {
-            const hour = parseInt(document.getElementById('hour').value);
-            const min = parseInt(document.getElementById('min').value);
 
-            if (hour >= 0 && hour < 24 && min >= 0 && min < 60) {
-                alert(`Alarm set for ${hour}:${min}!`);
-                alarm(hour, min);
-            } else {
-                alert('Please enter a valid time.');
-            }
-        };
-    </script>
+
+
+
+                    <div class="page-head">
+                        <div class="testimonial01">
+                                <div class="testimonial-1">
+                                    <img src="assets/testimonial-4.jpg">
+                                </div>
+                                <div>
+                                <h1 class="user-name">Preson Name</h1>
+                                    <p class="palace">profession</p>
+                                </div>
+                            </div>
+                            
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                        
+                            </div>
+                            <p class="pragrap1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde<br> rerum
+                                molestias nostrum voluptatibus vitae,<br> vero alias dolore atque.</p>
+                        
+                            </div>
+    </div>
+
+    <div class="full-page">
+        <div class="page-head">
+            
+    <div class="testimonial01">
+            <div class="testimonial-1">
+                <img src="assets/testimonial-1.jpg">
+            </div>
+            <div>
+            <h1 class="user-name">Preson Name</h1>
+                <p class="palace">profession</p>
+            </div>
+        </div>
+        
+        <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+    
+        </div>
+        <p class="pragrap1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde<br> rerum
+            molestias nostrum voluptatibus vitae,<br> vero alias dolore atque.</p>
+    
+        </div>
+    
+    
+    
+        <div class="page-head">
+            <div class="testimonial01">
+                    <div class="testimonial-1">
+                        <img src="assets/testimonial-2.jpg">
+                    </div>
+                    <div>
+                    <h1 class="user-name">Preson Name</h1>
+                        <p class="palace">profession</p>
+                    </div>
+                </div>
+                
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+            
+                </div>
+                <p class="pragrap1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde<br> rerum
+                    molestias nostrum voluptatibus vitae,<br> vero alias dolore atque.</p>
+            
+                </div>
+    
+    
+    
+                <div class="page-head">
+                    <div class="testimonial01">
+                            <div class="testimonial-1">
+                                <img src="assets/testimonial-3.jpg">
+                            </div>
+                            <div>
+                            <h1 class="user-name">Preson Name</h1>
+                                <p class="palace">profession</p>
+                            </div>
+                        </div>
+                        
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                    
+                        </div>
+                        <p class="pragrap1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde<br> rerum
+                            molestias nostrum voluptatibus vitae,<br> vero alias dolore atque.</p>
+                    
+                        </div>
+    
+    
+    
+    
+    
+                        <div class="page-head">
+                            <div class="testimonial01">
+                                    <div class="testimonial-1">
+                                        <img src="assets/testimonial-4.jpg">
+                                    </div>
+                                    <div>
+                                    <h1 class="user-name">Preson Name</h1>
+                                        <p class="palace">profession</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                            
+                                </div>
+                                <p class="pragrap1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde<br> rerum
+                                    molestias nostrum voluptatibus vitae,<br> vero alias dolore atque.</p>
+                            
+                                </div>
+        </div>
+
+</section><br>
+
+
+<section class="person-page1">
+
+<div class="ourblog">
+    <button class="blogbtn" type="submit">OUR BLOG</button>
+    <h1 class="whonews">Be First Who Read News</h1>
+</div>
+
+<section class="readnews">
+<div class="readimg">
+<img src="assets/blog-1.jpg" />
+<h3 class="date">16<br/> Sep</h3>
+<h3 class="time">How to get more test <br/>
+in your food form
+</h3>
+</div>
+<div class="readimg">
+    <img src="assets/blog-2.jpg" />
+    <h3 class="date">16<br/> Sep</h3>
+    <h3 class="time">How to get more test <br/>
+    in your food form
+    </h3>
+    </div>
+            
+    <div class="readimg">
+        <img src="assets/blog-3.jpg" />
+        <h3 class="date">16<br/> Sep</h3>
+        <h3 class="time">How to get more test <br/>
+        in your food form
+        </h3>
+        </div>
+
+</section>
+
+<footer>
+<div>
+    <h1>CaterServ</h1>
+    <div class="footer">
+    <p>There cursus massa at urnaaculis <br/> estieSed aliquamellus vitae ultrs <br/> condmentum leo massamollis its <br/> estiegittis miristum.</p>
+
+</div>
+
+<div class="mideaicons">
+<!-- <i class="fa fa-twitter-f"></i> -->
+
+
+<i class='fab fa-facebook-f instagram'></i>
+<i class='fab fa-twitter instagram'></i>
+<i class='fab fa-instagram instagram'></i>
+<i class='fab fa-linkedin-in instagram'></i>
+
+
+
+</div>
+</div>
+
+<div>
+<h1>Special Facilities</h1>
+<div class="footer">
+<p> <i class="fa fa-check color"></i> Chese Burger</p>
+<p> <i class="fa fa-check color"></i> Sandwich</p>
+<p> <i class="fa fa-check color"></i> Paneer Burger</p>
+<p> <i class="fa fa-check color"></i> Special Sweets</p>
+</div>
+
+</div>
+<div>
+    <h1>Contact Us</h1>
+    <div class="footer">
+    <p> <i class="fa fa-map-marker-alt color"></i> 123 Street, New York, USA</p>
+    <p> <i class="fa fa-phone-alt color"></i> (+012) 3456 7890 123</p>
+    <p> <i class="fa fa-envelope color"></i> info@example.com</p>
+    <p> <i class="fa fa-clock color"></i> 26/7 Hours Service</p>
+    
+</div>
+    </div>
+
+<div class="Gallery">
+    <h1>Social Gallery</h1>
+    <img src="assets/menu-01 (1).jpg">
+    <img src="assets/menu-02.jpg">
+    <img src="assets/menu-03.jpg">
+<div>
+    <img src="assets/menu-04.jpg">
+    <img src="assets/menu-05.jpg">
+    <img src="assets/menu-06.jpg">
+
+</div>
+    
+</div>
+
+
+
+</footer>
+
+<div class="copyright">
+    <p> <i class="fa-solid fa-copyright"></i> Your Site Name, All right reserved.</p>
+
+    <p>Designed By HTML Codex Distributed By ThemeWagon</p>
+</div>
+
 </body>
 </html>

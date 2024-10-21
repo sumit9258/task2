@@ -1,0 +1,1108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+position: relative;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(122, 117, 117);
+    font-weight: 500;
+}
+
+.logo {
+    margin-left: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+.search {
+    margin-right: 150px;
+
+}
+
+/* #icons{
+
+ } */
+.btn {
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: #D4A762;
+    border: none;
+    font-size: 16px;
+}
+
+#icons {
+    background-color: #D4A762;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.first {
+    display: flex;
+}
+
+.center {
+    margin-top: 150px;
+    margin-left: 100px;
+    animation: fade 3s forwards;
+
+}
+
+@keyframes fade {
+    from {
+        transform: translateY(-100%);
+        opacity: 0px;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.welcome {
+    margin-bottom: 50px;
+    font-size: 16px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+
+}
+
+.big-text {
+    font-size: 70px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+}
+
+.bookbtn {
+    position: absolute;
+    margin-top: 420px;
+    left: 100px;
+    animation: bookbtn 3s forwards;
+}
+
+@keyframes bookbtn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0px;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.know {
+    margin-left: 40px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background-color: #D4A762;
+
+}
+
+.big-image {
+    margin-left: 200px;
+    margin-top: 60px;
+    animation: big 3s forwards;
+
+}
+
+@keyframes big {
+    from {
+        transform: scale(0);
+        opacity: 0px;
+    }
+
+    to {
+
+        transform: scale(1.05);
+
+        opacity: 1;
+    }
+}
+
+.back {
+    animation: back 5s forwards;
+
+}
+
+@keyframes back {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.book {
+    padding: 15px 30px 15px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #D4A762;
+
+}
+
+.second {
+    margin-top: 200px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.po {
+    margin-left: 50px;
+    animation: po 5s forwards;
+
+}
+
+@keyframes po {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.cater {
+    color: #D4A762;
+
+}
+
+.aboutbtn {
+    padding: 6px 20px 6px 20px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+
+}
+
+.clients {
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+
+}
+
+.phara {
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(122, 117, 117);
+
+}
+
+#share {
+    color: #D4A762;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.share2 {
+    margin-top: 30px;
+    display: flex;
+    gap: 100px;
+    font-size: 20px;
+
+}
+
+.sharebtn {
+    margin-top: 50px;
+    padding: 15px 40px 15px 40px;
+    background-color: #D4A762;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+}
+
+.count {
+    display: flex;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.card {
+    font-size: 21px;
+    text-align: center;
+    background-color: #D4A762;
+    height: 220px;
+    width: 200px;
+    border-radius: 10px;
+    animation: user 5s forwards;
+}
+
+@keyframes user{
+from{
+    transform: translateY(100%);
+opacity: 0;
+}
+from{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+}
+
+.card1 {
+    font-size: 21px;
+    margin-left: 100px;
+    text-align: center;
+    background-color: #D4A762;
+    height: 240px;
+    width: 200px;
+    border-radius: 10px;
+
+}
+video{
+width: 500px;
+
+}
+
+.white {
+    padding-top: 20px;
+    color: white;
+    font-size: 70px !important;
+    margin-bottom: 30px;
+
+}
+
+.math {
+    font-size: 45px;
+
+}
+
+.service {
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+.offer {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    margin-top: 20px;
+
+}
+
+.servicebtn {
+    /* margin-top: 40px; */
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+    font-size: 15px;
+
+}
+
+.third {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 100px;
+    gap: 50px;
+}
+
+.products {
+    padding-top: 50px;
+    text-align: center;
+    border-radius: 20px;
+
+    width: 250px;
+    animation:products 2s forwards;
+}
+
+@keyframes products{
+    from{
+transform: translateY(100%);
+opacity: 0;
+    }
+    to{
+transform: translateY(0);
+opacity: 1;
+    }
+}
+
+.products::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #f0e68c;
+    ;
+    z-index: -1;
+    transition: height 1s ease;
+  border-radius: 20px;
+
+}
+
+.products:hover::before {
+    height: 100%;
+   
+}
+
+.products:hover {
+    transform: translateY(-10px);
+}
+.pizza {
+    font-size: 100px;
+    margin-bottom: 25px;
+    color: #D4A762;
+}
+
+.overview {
+    margin-bottom: 15px;
+
+}
+
+.productcard {
+    color: rgb(122, 117, 117);
+    font-size: 20px;
+
+}
+
+.readbtn {
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D4A762;
+    font-size: 17px;
+    font-weight: 550;
+    margin-bottom: 25px;
+}
+.readbtn:hover{
+    background-color: black;
+    color: #D4A762;
+    cursor: pointer;
+}
+
+.latest {
+    margin-top: 200px;
+    text-align: center;
+
+}
+
+.latestbtn {
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+    margin-bottom: 20px;
+}
+
+.event {
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+
+}
+
+.flexbtn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 40px;
+}
+
+.firstbtn {
+    padding: 10px 30px 10px 30px;
+    background-color: #D4A762;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.allbtn {
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+    font-size: 16px;
+}
+
+.images {
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
+}
+
+.images div img {
+    width: 260px;
+    animation: fadeIn 10s forwards;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.b {
+    animation: fadeIn 2s forwards;
+}
+
+.bb {
+    animation: fadeIn 4s forwards;
+}
+
+.bbb {
+    animation: fadeIn 4s forwards;
+}
+
+.bbbb {
+    animation: fadeIn 7s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0px;
+
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        
+    }
+}
+
+
+
+.ourmenu {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.ourmenubtn {
+    padding: 5px 30px 5px 30px;
+    border: 1px solid #D4A762;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.popularfood {
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+
+}
+
+.ffood {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.starter {
+    padding: 12px 35px 12px 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D4A762;
+}
+
+.food {
+    padding: 12px 35px 12px 35px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+
+}
+
+.menulist div img {
+    border-radius: 50%;
+}
+
+.menulist {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    /* animation: menufirst 5s forwards ; */
+}
+
+@keyframes menufi {
+    from {
+        transform: translateY(100%);
+        opacity: 0px;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.aa {
+    display: flex;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    animation: menufi 5s forwards;
+}
+
+.paneer {
+
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-bottom: 0px;
+
+
+}
+
+.money {
+    margin-left: 250px;
+    color: #D4A762;
+}
+
+.ss {
+    border-bottom: 2px dashed #D4A762;
+    padding-bottom: 10px;
+
+
+}
+
+.pp {
+    padding-top: 10px;
+    color: rgb(122, 117, 117);
+
+}
+
+.tikkimoney {
+    color: #D4A762;
+    padding-left: 150px;
+}
+
+.Bloomingmoney {
+
+    color: #D4A762;
+    padding-left: 220px;
+}
+
+.potatomoney {
+    color: #D4A762;
+    padding-left: 180px;
+}
+
+.chikenmoney {
+    padding-left: 220px;
+    color: #D4A762;
+}
+
+.bookcontainer {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 300px;
+}
+
+.bookcontainer img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.formbtn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.btnn {
+    padding: 5px 25px 5px 25px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+    font-size: 15px;
+}
+
+select {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+    width: 280px;
+    border-radius: 10px;
+    color: rgb(122, 117, 117);
+    font-size: 16px;
+    border: 1px solid #D4A762;
+}
+
+form {
+    border: 1px solid #D4A762;
+    padding-right: 20px;
+    background-color: #FFFCF8;
+    border-radius: 10px;
+}
+
+.order {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.orderbtn {
+    padding: 15px 40px 15px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #D4A762;
+    font-size: 16px;
+    /* font-weight: 600; */
+    margin-bottom: 40px;
+}
+
+.right {
+    margin-left: 0px;
+    border-radius: 10px;
+}
+
+.ourteam {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.team {
+    padding: 5px 25px 5px 25px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+    font-size: 14px;
+}
+
+.cookteam {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin-top: 10px;
+
+}
+
+.teamimage {
+    margin-top: 70px;
+    margin-left: 140px;
+    display: flex;
+    gap: 20px;
+animation: team 4s forwards;
+
+}
+
+@keyframes team{
+from{
+transform: translateY(100%);
+opacity: 0;
+}
+to{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+}
+
+.teams img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.aaaaaa {
+    /* color: white; */
+    text-align: center;
+    padding-top: 10px;
+}
+
+.teams {
+    background-color: black;
+    height: 390px;
+    border-radius: 10px;
+    position: relative;
+       color: #D4A762;
+
+
+}
+.aaaaaa .work{
+    color: white;
+}
+
+.teams .shareicon {
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    padding-top: 10px;
+color: black;
+    background-color: #D4A762;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.teams .hoverfacebook {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 15px;
+    right: 10px;
+    top: 70px;
+    background-color: #D4A762;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.teams .hovertwitter {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 15px;
+    right: 10px;
+    top: 120px;
+    background-color: #D4A762;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+
+.teams .hoverinstagram {
+    position: absolute;
+    display: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    right: 10px;
+    top: 170px;
+    background-color: #D4A762;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+
+.hoverfacebook:hover,.hovertwitter:hover,.hoverinstagram:hover{
+display: block;
+
+
+}
+
+
+.teams:hover,.colorname:hover{
+    background-color: #D4A762;
+    height: 390;
+    color: black !important;
+
+
+}
+
+.colorname :hover {
+    color: black;
+
+}
+
+.work {
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.customer {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.testimonial {
+    padding: 7px 20px 7px 20px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+    margin-bottom: 20px;
+}
+
+.say {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+
+}
+
+
+
+.ourblog {
+    text-align: center;
+
+}
+
+.blogbtn {
+    padding: 7px 20px 7px 20px;
+    border-radius: 20px;
+    border: 1px solid #D4A762;
+    margin-bottom: 20px;
+}
+
+.whonews {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+
+}
+
+.readnews {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+    animation: blog 4s forwards;
+}
+
+@keyframes blog {
+from{
+transform: translateY(100%);
+opacity: 0;
+}
+to{
+transform: translateY(0);
+opacity: 1;
+}
+
+}
+
+.readimg img {
+    width: 350px;
+    border-radius: 10px;
+
+}
+
+.readimg {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+
+}
+
+.readimg:hover img {
+    transform: scale(1.05);
+    transition: transform .5s ease;
+}
+
+.date {
+    position: absolute;
+    background-color: #D4A762;
+    position: absolute;
+    left: 40px;
+    top: 280px;
+    padding: 10px;
+    padding-right: 30px;
+    /* padding-bottom: 10px; */
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.time {
+    position: absolute;
+    background-color: white;
+    left: 90px;
+    top: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    line-height: 30px;
+    font-size: 18px;
+    color: #9D9D9D;
+    margin-top: 20px;
+}
+
+.color {
+    color: #D4A762;
+    font-size: 20px;
+}
+
+.Gallery img {
+    border-radius: 50%;
+    width: 80px;
+    padding: 10px;
+    border: 1px solid #D4A762;
+}
+
+.Gallery h1 {
+    margin-bottom: 20px;
+}
+
+.mideaicons {
+    margin-top: 20px;
+
+}
+
+.instagram {
+    background-color: #D4A762;
+    font-size: 25px;
+    height: 30px;
+    padding-top: 4px;
+    border-radius: 50%;
+    width: 40px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.copyright {
+    margin-top: 100px;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    color: white;
+    height: 70px;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.Customers {
+    display: flex;
+
+
+}
+
+.person-page .Customers {
+    text-align: center;
+
+}
+
+.Customers h1 {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.full-page {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+
+}
+
+.page-head {
+
+    border-radius: 10px;
+    border: 2px solid rgb(212, 167, 98);
+    /* margin-right: 1120px; */
+    background-color: rgb(249, 235, 237);
+    width: 400px;
+    height: auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    animation: cardss 10s linear infinite;
+
+}
+
+.testimonial01 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    gap: 20px;
+    /* animation: cardss 5s infinite; */
+}
+
+@keyframes cardss {
+
+    0% {
+transform: translateX(-100%);
+
+    }
+
+    100% {
+    transform: translateX(100%);
+
+    }
+
+
+
+}
+
+.testimonial-1 img {
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 30px;
+}
+
+.palace {
+    font-size: 20px;
+}
+
+.star {
+    color: rgb(212, 167, 98);
+
+}
+
+.pragrap1 {
+    color: gray;
+    font-size: 20px;
+}
+.abouttext{
+text-align: center;
+margin-top: 150px;
+
+}
+.about{
+font-family: 'Dancing Script', cursive;
+font-size: 70px;
+}
+.about-botom{
+margin-top: 20px;
+
+}
+
+#nav-page{
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 130px;
+    display: none;
+list-style: none;
+line-height: 25px;
+background-color: #FFFCF8;
+border: 1px solid #D4A762;
+padding-left: 0px;
+}
+.background-page:hover{
+    background-color: #D4A762;
+
+}
+
