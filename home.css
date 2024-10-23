@@ -424,6 +424,7 @@ opacity: 1;
     font-family: 'Dancing Script', cursive;
     font-size: 55px;
 
+
 }
 
 .flexbtn {
@@ -672,7 +673,6 @@ form {
     border: none;
     background-color: #D4A762;
     font-size: 16px;
-    /* font-weight: 600; */
     margin-bottom: 40px;
 }
 
@@ -727,7 +727,7 @@ to{
 }
 
 .aaaaaa {
-    /* color: white; */
+    
     text-align: center;
     padding-top: 10px;
 }
@@ -761,13 +761,11 @@ color: black;
 }
 
 .teams .hoverfacebook {
-    display: none;
     position: absolute;
     padding-top: 10px;
     padding-left: 15px;
     right: 10px;
     top: 70px;
-    background-color: #D4A762;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -775,14 +773,18 @@ color: black;
 
 }
 
+#iconss,#iconssss,#iconsssss,#iconsss,.hoverfacebook,.hoverinstagram,.hovertwitter{
+display: none;
+background-color: #D4A762;
+
+}
+
 .teams .hovertwitter {
-    display: none;
     position: absolute;
     padding-top: 10px;
     padding-left: 15px;
     right: 10px;
     top: 120px;
-    background-color: #D4A762;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -791,24 +793,20 @@ color: black;
 
 .teams .hoverinstagram {
     position: absolute;
-    display: none;
     padding-top: 10px;
     padding-left: 15px;
     right: 10px;
     top: 170px;
-    background-color: #D4A762;
     border-radius: 50%;
     width: 40px;
     height: 40px;
 
 }
 
-.hoverfacebook:hover,.hovertwitter:hover,.hoverinstagram:hover{
-display: block;
 
-
+.iconss{
+    display: none;
 }
-
 
 .teams:hover,.colorname:hover{
     background-color: #D4A762;
@@ -989,6 +987,7 @@ footer {
     align-items: center;
 }
 
+
 .Customers {
     display: flex;
 
@@ -1042,12 +1041,12 @@ footer {
 @keyframes cardss {
 
     0% {
-transform: translateX(-100%);
+transform: translateX(0%);
 
     }
 
     100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
 
     }
 
@@ -1079,8 +1078,22 @@ transform: translateX(-100%);
 .abouttext{
 text-align: center;
 margin-top: 150px;
+animation: pages 4s forwards;
+margin-bottom: 50px;
+}
+
+@keyframes pages{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+to{
+    transform: translateY(0);
+    opacity: 1;
+}
 
 }
+
 .about{
 font-family: 'Dancing Script', cursive;
 font-size: 70px;
@@ -1092,17 +1105,328 @@ margin-top: 20px;
 
 #nav-page{
     position: absolute;
-    margin-left: 780px;
-    margin-top: 130px;
+    margin-left: 400px;
     display: none;
 list-style: none;
+padding-bottom: 10px;
+padding-top: 10px;
 line-height: 25px;
 background-color: #FFFCF8;
 border: 1px solid #D4A762;
-padding-left: 0px;
+padding-left: 10px;
+font-size: 18px;
+padding-right: 40px;
 }
 .background-page:hover{
     background-color: #D4A762;
 
 }
+
+.full-page2{
+animation:say2 linear 20s infinite;
+max-width: 100%;
+
+
+}
+
+@keyframes say2{
+0%{
+transform: translateX(0%);
+   
+}
+100%{
+
+transform: translateX(100%);
+
+}
+}
+
+.person-page{
+    overflow: hidden;
+}
+
+.contact{
+margin-left: 150px;
+display: flex;
+}
+
+.contactbtn{
+padding: 7px 20px 7px 20px;
+border-radius: 20px;
+border: 1px solid #D4A762;
+margin-bottom: 20px;
+font-size: 16px;
+
+}
+.Queries{
+margin-bottom: 20px;
+font-family: 'Dancing Script', cursive;
+font-size: 55px;
+}
+.contactpa{
+margin-bottom: 20px;
+color: rgb(122, 117, 117);
+font-size: 17px;
+}
+.cform{
+line-height: 60px;
+}
+.cform input{
+    margin-bottom: 14px;
+padding: 20px;
+width: 100%;
+border-radius: 10px;
+border: 1px solid  #D4A762;
+}
+#discription{
+margin-top: 10px;
+width: 100%;
+padding: 10px;
+border-radius: 10px;
+border: 1px solid  #D4A762;
+}
+.rightcontact{
+margin-top: 100px;
+margin-left: 50px;
+line-height: 25px;
+}
+.map{
+border-radius: 10px;
+border: 1px solid #D4A762;
+padding: 30px 170px 30px 20px;
+margin-top: 20px;
+}
+
+.mapp,.emails,.mobile{
+color: #D4A762;
+margin-right: 10px;
+
+}
+.addressbottom{
+margin-left: 30px;
+color: rgb(122, 117, 117);
+font-size: 17px;
+
+}
+.sumbit-contact{
+    background-color: #D4A762;
+    border: none;
+padding: 20px;
+border-radius: 30px;
+font-size: 17px;
+width: 100%; 
+
+}
+.sumbit-contact:hover{
+background-color: black;
+color: #D4A762;
+cursor:pointer;
+
+}
+#js{
+    color: rgb(122, 117, 117);
+cursor: pointer;
+
+}
+
+
+#phone{
+display: none;
+
+}
+#bar{
+
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    #noresponsive{
+        display: none;
+
+    }
+   
+    .header{
+        display: flex;
+    
+    }
+
+   
+    #phone{
+
+        margin-top: 400px;
+        font-size: 30px;
+        margin-right: 20px;
+display: none;
+
+    }
+
+
+.search{
+    display: none;
+}
+#bar{
+font-size: 50px;
+margin-left: 200px;
+color: black ;
+display: block;
+
+}
+.first{
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.bookbtn{
+display: flex;
+margin-top: 670px;
+
+
+}
+.big-text{
+    margin-bottom: 90px;
+}
+.logo{
+
+    margin-left: 0px;
+}
+
+.book,.know{
+padding: 10px 40px 10px 40px;
+
+}
+.second{
+    flex-direction: column;
+    margin-left: 0px;
+
+}
+.count{
+flex-wrap: wrap;
+}
+.third{
+flex-wrap: wrap;
+
+}
+.flexbtn{
+gap: 25px;
+flex-wrap: wrap;
+}
+
+.images{
+flex-direction: column;
+
+}
+.teamimage{
+flex-wrap: wrap;
+margin-top: 20px;
+}
+.big-image{
+    margin-top: 40px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.ffood{
+margin-left: 0px;
+flex-wrap: wrap;
+
+}
+.menulist{
+flex-wrap: wrap;
+margin-left: 0px;
+
+}
+
+.bookcontainer{
+margin-left: 0px;
+
+}
+.bookcontainer img{
+width: 50px;
+
+}
+
+.readnews{
+margin-left: 0px;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+
+footer{
+flex-wrap: wrap;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

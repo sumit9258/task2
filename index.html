@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -16,28 +16,46 @@
 <body>
     <header class="header ">
         <div class="logo"><h2> <span class="cater">Cater </span>Serv</h2></div>
+        <i class="fa fa-bars" id="bar"></i>
+
         <nav class="nav-list">
-            <ul>
+            <ul id="noresponsive">
             <li><a href="#" style="color: #D4A762;">Home</a></li>
-  <li><a href="#">About</a></li>
- <li><a href="#">Services</a></li>
- <li><a href="#">Events</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#" id="js">Pages </a></li>
-      <li><a href="#">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+ <li><a href="service.html">Services</a></li>
+ <li><a href="event.html">Events</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    <li id="js">Pages <i class="fa-solid fa-chevron-down"></i>  </li>
+      <li><a href="contact.html">Contact</a></li>
 
         </ul>
+
+
+        <ul id="nav-page">
+             
+            <li><a href="booking.html" class="background-page">Booking</a></li>
+           <li><a href="ourblo.html" class="background-page">Our Blog</a></li>
+           <li><a href="Ourteam.html" class="background-page">Our Team</a></li>
+                <li><a href="test.html" class="background-page">Testimonial</a></li>
+          
+                  </ul>
+
+                  <ul id="phone">
+                    <li><a href="#" style="color: #D4A762;">Home</a></li>
+          <li><a href="about.html">About</a></li>
+         <li><a href="service.html">Services</a></li>
+         <li><a href="event.html">Events</a></li>
+              <li><a href="menu.html">Menu</a></li>
+            <li id="js">Pages <i class="fa-solid fa-chevron-down"></i>  </li>
+              <li><a href="contact.html">Contact</a></li>
+        
+                </ul>   
+
+
         </nav>
 
         
-            <ul id="nav-page">
-            <!-- <li><a href="#" style="color: #D4A762;">Home</a></li> -->
-  <li><a href="#" class="background-page">Booking</a></li>
- <li><a href="#" class="background-page">Our Blog</a></li>
- <li><a href="#" class="background-page">Our Team</a></li>
-      <li><a href="#" class="background-page">Testimonial</a></li>
-
-        </ul>
+      
         <script src="page.js"></script>
 
         <div class="search">
@@ -474,15 +492,17 @@
 </div>
 
 <section class="teamimage">
-<div class="teams">
+ 
+<div class="teams" id="team">
 
     <img src="assets/team-1 (1).jpg">
     
     <i class="fa fa-share-alt shareicon"></i>
+    <div id="iconss">
     <i class='fab fa-facebook-f hoverfacebook'></i>
 <i class='fab fa-twitter hovertwitter'></i>
 <i class='fab fa-instagram hoverinstagram'></i>
-
+</div>
     <div class="aaaaaa">
         <h1 class="colorname">Herry</h1>
 <p class="work">Decoration Chef</p>
@@ -490,35 +510,42 @@
 
 </div>
 
-<div class="teams">
+<div class="teams" id="teams">
     <img src="assets/team-2 (1).jpg">
     <i class="fa fa-share-alt shareicon"></i>
+    <div id="iconsss">
     <i class='fab fa-facebook-f hoverfacebook'></i>
     <i class='fab fa-twitter hovertwitter'></i>
     <i class='fab fa-instagram hoverinstagram'></i>
+</div>
     <div class="aaaaaa">
         <h1 class="colorname">Jemes Born</h1>
 <p class="work">Executive Chef</p>
     </div>
 </div>
-<div class="teams">
+<div class="teams" id="teamss">
     <img src="assets/team-3 (1).jpg">
+    
     <i class="fa fa-share-alt shareicon"></i>
+    <div id="iconssss">
     <i class='fab fa-facebook-f hoverfacebook'></i>
     <i class='fab fa-twitter hovertwitter'></i>
     <i class='fab fa-instagram hoverinstagram'></i>
+</div>
     <div class="aaaaaa">
         <h1 class="colorname">Martin Hill</h1>
 <p class="work">Kitchen Porter</p>
     </div>
 
 </div>
-<div class="teams">
+<div class="teams" id="teamsss">
     <img src="assets/team-4 (1).jpg">
     <i class="fa fa-share-alt shareicon"></i>
+    <div id="iconsssss">
     <i class='fab fa-facebook-f hoverfacebook'></i>
     <i class='fab fa-twitter hovertwitter'></i>
     <i class='fab fa-instagram hoverinstagram'></i>
+</div>
     <div class="aaaaaa">
         <h1 class="colorname">Adam Smith</h1>
 <p class="work">Head Chef</p>
@@ -642,9 +669,11 @@
                             </div>
     </div>
 
-    <div class="full-page">
+    <div style="display: flex;" class="full-page2">
+       
         <div class="page-head">
             
+
     <div class="testimonial01">
             <div class="testimonial-1">
                 <img src="assets/testimonial-1.jpg">
@@ -749,7 +778,9 @@
                                 </div>
         </div>
 
+        
 </section><br>
+
 
 
 <section class="person-page1">
@@ -759,7 +790,7 @@
     <h1 class="whonews">Be First Who Read News</h1>
 </div>
 
-<section class="readnews">
+<section class="readnews" id="bookform">
 <div class="readimg">
 <img src="assets/blog-1.jpg" />
 <h3 class="date">16<br/> Sep</h3>
@@ -794,7 +825,6 @@ in your food form
 </div>
 
 <div class="mideaicons">
-<!-- <i class="fa fa-twitter-f"></i> -->
 
 
 <i class='fab fa-facebook-f instagram'></i>
@@ -851,6 +881,7 @@ in your food form
 
     <p>Designed By HTML Codex Distributed By ThemeWagon</p>
 </div>
+<script src="hover.js"></script>
 
 </body>
 </html>
